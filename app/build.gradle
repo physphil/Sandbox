@@ -36,13 +36,9 @@ android {
     }
 
     productFlavors{
-        free{
-            applicationId "com.physphil.android.sandbox.free"
-        }
-
-        paid{
-            applicationId "com.physphil.android.sandbox.pro"
-        }
+        dev
+        staging
+        production
     }
 }
 
@@ -50,8 +46,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:22.2.1'
     compile 'de.greenrobot:eventbus:2.4.0'
-
-    // Only full version requires network calls
-    paidCompile 'com.squareup.retrofit:retrofit:1.9.0'
-    paidCompile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
 }
