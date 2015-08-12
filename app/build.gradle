@@ -30,6 +30,7 @@ android {
         }
 
         debug{
+            applicationIdSuffix ".debug"
             signingConfig null
         }
     }
